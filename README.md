@@ -21,24 +21,30 @@ Head over to the [report](https://raw.githubusercontent.com/jimmyg1997/NTUA-Mult
 
 ## Getting Started
 
-Commands are given via the terminal. Available commands:
-
+Commands are given via the terminal.
 ```
 Usage :
 $ ./agora.py COMMAND
 
 Available Commands:
-* `tickers` [letter]                   					 		 Get all tickers list that starts with <letter>
-* `ticker-data` [ticker] [start_date] [end_date] 		Get all historical data for <ticker> from <start_date> to <end_date>
-* `ticker-statistics`
-* `tickers-statistics`
-* `ticker-risk-analysis`
-* `tickers-risk-analysis`
-* `portfolio-construction`
-* `portfolio-optimization`
-* `help`
-```
+* `tickers` [letter]		Get all tickers list that starts with <letter>
 
+* `ticker-data` [ticker] [start_date] [end_date]		Get all historical data for <ticker> from <start_date> to <end_date>
+
+* `ticker-statistics`[ticker1] ... [tickerN] [start_date] [end_date]		Get all historical data & descriptive statistics for <ticker> from <start_date> to <end_date>
+						
+* `tickers-statistics`[ticker] [start_date] [end_date]		Get all historical data & descriptive statistics for <ticker1>, ... <tickerN> from <start_date> to <end_date>
+
+* `ticker-risk-analysis`[ticker] [start_date] [end_date]		 Get all historical data & descriptive  & risk-analysis statistics for <ticker> from <start_date> to <end_date>
+
+* `tickers-risk-analysis`[ticker1] ... [tickerN] [start_date] [end_date]		Get all historical data & descriptive  & risk-analysis statistics for <ticker1>, ... <tickerN> from <start_date> to <end_date>
+
+* `portfolio-construction` [N] [ticker1] ... [tickerN] [start_date] [end_date]		Construct a portfolio with <N> instruments <ticker1>, ... <tickerN> from <start_date> to <end_date>
+
+* `portfolio-optimization` [N] [ticker1] ... [tickerN] [start_date] [end_date]		Optimize a portfolio with <N> instruments <ticker1>, ... <tickerN> from <start_date> to <end_date> through the Simulation of <P> portfolios
+
+* `help`		Prints all available commands to the user
+```
 
 
 ## Future Work
