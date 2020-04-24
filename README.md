@@ -28,7 +28,7 @@ Usage :
 $ ./agora.py COMMAND
 
 Available Commands:
-* `tickers` [letter]                   					 		Get all tickers list that starts with <letter>
+* `tickers` [letter]                   					 		 Get all tickers list that starts with <letter>
 * `ticker-data` [ticker] [start_date] [end_date] 		Get all historical data for <ticker> from <start_date> to <end_date>
 * `ticker-statistics`
 * `tickers-statistics`
