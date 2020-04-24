@@ -1,11 +1,11 @@
-# **📈 Agora - Financial Markowitz Portfolio Optimization  **
+# 📈 Agora - Financial Markowitz Portfolio Optimization
 
 This repository contains the Final Project for Deree course "Investments & Portfolio Management".
 
 Authors:
 
-* Dimitrios Georgiou
-* Angelos Pappas
+* *Dimitrios Georgiou*
+* *Angelos Pappas*
 
 ## What is *agora* ?
 
