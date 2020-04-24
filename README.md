@@ -9,15 +9,17 @@ Authors:
 
 ## What is *agora* ?
 
-*Agora* is system that implements Markowitz Portfolio Optimization method (classical mean-variance technique). 
+*Agora* is system that implements Markowitz Portfolio Optimization method (classical mean-variance technique). Harry Markowitz's 1952 paper is the undeniable classic, which turned portfolio optimization from an art into a science. The key insight is that by combining assets with different expected returns and volatilities, one can decide on a mathematically optimal allocation which minimises the risk for a target return – the set of all such optimal portfolios is referred to as the efficient frontier.
 
-It is extensible, and can be useful for a casual investor giving initial insights through as a serious *Financial Instrument Analysis* or *Portfolio Management*.
+
+It is extensible, and can be useful for a casual investor giving initial insights through as a serious *Financial Instrument Analysis* or *Portfolio Management*. The software relies on Yahoo Finance! to download the most recent trends in asset performance.
 
 Head over to the [report](https://raw.githubusercontent.com/jimmyg1997/NTUA-Multi-Criteria-Decision-Analysis/master/report.pdf) to get an in-depth look at the project.
 
 
 
 <img src="https://raw.githubusercontent.com/jimmyg1997/agora/master/photos/system.png" alt="https://raw.githubusercontent.com/jimmyg1997/agora/master/photos/system.png">
+
 
 ## Getting Started
 
@@ -47,9 +49,59 @@ Explanation:
 5.1 - Construct a portfolio with <N> instruments <ticker1>, ... <tickerN> from <start_date> to <end_date>
 5.2 - Optimize a portfolio with <N> instruments <ticker1>, ... <tickerN> from <start_date> to <end_date> through the Simulation of <P> portfolios
 6   - Prints all available commands to the user
+```
 
+## A quick example
+
+Here is an example on real life bond, stock & commodities data, demonstrating how easy it is to find the 2 efficient portfolios that:
+
+*  *maximises the Sharpe ratio* (a measure of risk-adjusted returns).
+* *minimizes the volatility*
+
+```python
+./agora.py portfolio-optimiation 5000 5 AAPL
+```
+
+This outputs the following:
 
 ```
++---------+--------------------------+-----------------------------+
+|         |   Expected Annual Return |   Annual Standard Deviation |
+|---------+--------------------------+-----------------------------|
+| AAPL    |                  23.1442 |                    0.285451 |
+| MSFT    |                  30.419  |                    0.275795 |
+| NVDA    |                  61.2178 |                    0.460714 |
+| VRTX    |                  21.9815 |                    0.385221 |
+| BTC-USD |                  61.5178 |                    0.63088  |
++---------+--------------------------+-----------------------------+
++--------------------------------------------------------------+
+|           * Max Sharpe Ratio optimized Portfolio *           |
+|  Portfolio Annual Return (252 days)  = 50.839 %              |
+|  Portfolio Annual Standard Deviation  (252 days)  = 0.319    |
+|  Portfolio Annual Sharpe Ratio  (252 days)  = 1.466          |
++--------------------------------------------------------------+
++-------------------------------------------------------------+
+|       * Min Standard Deviation optimized Portfolio *        |
+|  Portfolio Annual Return (252 days)  = 29.543 %             |
+|  Portfolio Annual Standard Deviation  (252 days)  = 0.243   |
+|  Portfolio Annual Sharpe Ratio  (252 days)  = 1.044         |
++-------------------------------------------------------------+
++---------+-----------------------------+----------------------------+
+|         |   Max SR Allocation Weights |   Min σ Allocation Weights |
+|---------+-----------------------------+----------------------------|
+| AAPL    |                     4.2967  |                   39.136   |
+| MSFT    |                    22.5286  |                   32.4369  |
+| NVDA    |                    43.9819  |                    1.12696 |
+| VRTX    |                     4.78606 |                   17.3675  |
+| BTC-USD |                    24.4067  |                    9.93264 |
++---------+-----------------------------+----------------------------+
+```
+
+<img src="https://raw.githubusercontent.com/jimmyg1997/agora/master/photos/5000_portfolio_simulation.png" alt="https://raw.githubusercontent.com/jimmyg1997/agora/master/photos/5000_portfolio_simulation.png">
+
+## Source Code
+
+
 
 
 ## Future Work
