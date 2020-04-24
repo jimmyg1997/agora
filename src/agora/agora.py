@@ -485,7 +485,7 @@ def portfolio_construction(**kwargs):
 
 	#-------------------------------------------------------------------------------------------------------------------------#
 	# [3] - Plot the data points for these 3 portfolios (random, risky, total portfolio)
-	title = "result/initial_portfolios"
+	title = "initial_portfolios"
 	portfolio_arr = ["Random", "Unoptimized Risky", "Unoptimized Total"]
 	portfolio.plot_initial_portfolios(title, portfolio_arr, descriptive_df)
 
@@ -597,7 +597,7 @@ def portfolio_optimization(**kwargs):
 	if printing : utils.display(weights_df)
 
 	# 5 - Plot the portfolios along with the 2 efficient portfolios.
-	title = "result/{}_portfolio_simulation".format(num_portfolios)
+	title = "{}_portfolio_simulation".format(num_portfolios)
 	portfolio.plot_portfolio_simulation(title, instrument_list[0].date_range, std_arr,ret_arr, sharpe_arr, descriptive_df, returns_merged)
 
 
