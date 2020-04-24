@@ -27,32 +27,28 @@ Usage :
 $ ./agora.py COMMAND
 
 Available Commands:
-* `tickers` [letter]
-Get all tickers list that starts with <letter>
+1   - `tickers` [letter]
+2   - `ticker-data` [ticker] [start_date] [end_date]
+3.1 - `ticker-statistics`[ticker1] ... [tickerN] [start_date] [end_date]
+3.2 - `tickers-statistics`[ticker] [start_date] [end_date]
+4.1 - `ticker-risk-analysis`[ticker] [start_date] [end_date]
+4.2 - `tickers-risk-analysis`[ticker1] ... [tickerN] [start_date] [end_date]
+5.1 - `portfolio-construction` [N] [ticker1] ... [tickerN] [start_date] [end_date]
+5.2 - `portfolio-optimization` [N] [ticker1] ... [tickerN] [start_date] [end_date]
+6   - `help`
 
-* `ticker-data` [ticker] [start_date] [end_date]
-Get all historical data for <ticker> from <start_date> to <end_date>
+Explanation:
+1   - Get all tickers list that starts with <letter>
+2.  - Get all historical data for <ticker> from <start_date> to <end_date>
+3.1 - Get all historical data & descriptive statistics for <ticker> from <start_date> to <end_date>
+3.2 - Get all historical data & descriptive statistics for <ticker1>, ... <tickerN> from <start_date> to <end_date>
+4.1 - Get all historical data & descriptive  & risk-analysis statistics for <ticker> from <start_date> to <end_date>
+4.2 - Get all historical data & descriptive  & risk-analysis statistics for <ticker1>, ... <tickerN> from <start_date> to <end_date>
+5.1 - Construct a portfolio with <N> instruments <ticker1>, ... <tickerN> from <start_date> to <end_date>
+5.2 - Optimize a portfolio with <N> instruments <ticker1>, ... <tickerN> from <start_date> to <end_date> through the Simulation of <P> portfolios
+6   - Prints all available commands to the user
 
-* `ticker-statistics`[ticker1] ... [tickerN] [start_date] [end_date]
-Get all historical data & descriptive statistics for <ticker> from <start_date> to <end_date>
-						
-* `tickers-statistics`[ticker] [start_date] [end_date]
-Get all historical data & descriptive statistics for <ticker1>, ... <tickerN> from <start_date> to <end_date>
 
-* `ticker-risk-analysis`[ticker] [start_date] [end_date]
-Get all historical data & descriptive  & risk-analysis statistics for <ticker> from <start_date> to <end_date>
-
-* `tickers-risk-analysis`[ticker1] ... [tickerN] [start_date] [end_date]
-Get all historical data & descriptive  & risk-analysis statistics for <ticker1>, ... <tickerN> from <start_date> to <end_date>
-
-* `portfolio-construction` [N] [ticker1] ... [tickerN] [start_date] [end_date]
-Construct a portfolio with <N> instruments <ticker1>, ... <tickerN> from <start_date> to <end_date>
-
-* `portfolio-optimization` [N] [ticker1] ... [tickerN] [start_date] [end_date]
-Optimize a portfolio with <N> instruments <ticker1>, ... <tickerN> from <start_date> to <end_date> through the Simulation of <P> portfolios
-
-* `help`
-Prints all available commands to the user
 ```
 
 
