@@ -14,8 +14,7 @@ Authors:
 
 It is extensible, and can be useful for a casual investor giving initial insights through as a serious *Financial Instrument Analysis* or *Portfolio Management*. The software relies on Yahoo Finance! to download the most recent trends in asset performance.
 
-Head over to the [report](https://raw.githubusercontent.com/jimmyg1997/NTUA-Multi-Criteria-Decision-Analysis/master/report.pdf) to get an in-depth look at the project.
-
+Head over to the [report](https://raw.githubusercontent.com/jimmyg1997/report.pdf) to get an in-depth look at the project.
 
 
 <img src="https://raw.githubusercontent.com/jimmyg1997/agora/master/photos/system.png" alt="https://raw.githubusercontent.com/jimmyg1997/agora/master/photos/system.png">
