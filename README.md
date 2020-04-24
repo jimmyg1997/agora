@@ -27,43 +27,41 @@ Usage :
 $ ./agora.py COMMAND
 
 Available Commands:
-* `tickers` [letter]		Get all tickers list that starts with <letter>
+* `tickers` [letter]
+Get all tickers list that starts with <letter>
 
-* `ticker-data` [ticker] [start_date] [end_date]		Get all historical data for <ticker> from <start_date> to <end_date>
+* `ticker-data` [ticker] [start_date] [end_date]
+Get all historical data for <ticker> from <start_date> to <end_date>
 
-* `ticker-statistics`[ticker1] ... [tickerN] [start_date] [end_date]		Get all historical data & descriptive statistics for <ticker> from <start_date> to <end_date>
+* `ticker-statistics`[ticker1] ... [tickerN] [start_date] [end_date]
+Get all historical data & descriptive statistics for <ticker> from <start_date> to <end_date>
 						
-* `tickers-statistics`[ticker] [start_date] [end_date]		Get all historical data & descriptive statistics for <ticker1>, ... <tickerN> from <start_date> to <end_date>
+* `tickers-statistics`[ticker] [start_date] [end_date]
+Get all historical data & descriptive statistics for <ticker1>, ... <tickerN> from <start_date> to <end_date>
 
-* `ticker-risk-analysis`[ticker] [start_date] [end_date]		 Get all historical data & descriptive  & risk-analysis statistics for <ticker> from <start_date> to <end_date>
+* `ticker-risk-analysis`[ticker] [start_date] [end_date]
+Get all historical data & descriptive  & risk-analysis statistics for <ticker> from <start_date> to <end_date>
 
-* `tickers-risk-analysis`[ticker1] ... [tickerN] [start_date] [end_date]		Get all historical data & descriptive  & risk-analysis statistics for <ticker1>, ... <tickerN> from <start_date> to <end_date>
+* `tickers-risk-analysis`[ticker1] ... [tickerN] [start_date] [end_date]
+Get all historical data & descriptive  & risk-analysis statistics for <ticker1>, ... <tickerN> from <start_date> to <end_date>
 
-* `portfolio-construction` [N] [ticker1] ... [tickerN] [start_date] [end_date]		Construct a portfolio with <N> instruments <ticker1>, ... <tickerN> from <start_date> to <end_date>
+* `portfolio-construction` [N] [ticker1] ... [tickerN] [start_date] [end_date]
+Construct a portfolio with <N> instruments <ticker1>, ... <tickerN> from <start_date> to <end_date>
 
-* `portfolio-optimization` [N] [ticker1] ... [tickerN] [start_date] [end_date]		Optimize a portfolio with <N> instruments <ticker1>, ... <tickerN> from <start_date> to <end_date> through the Simulation of <P> portfolios
+* `portfolio-optimization` [N] [ticker1] ... [tickerN] [start_date] [end_date]
+Optimize a portfolio with <N> instruments <ticker1>, ... <tickerN> from <start_date> to <end_date> through the Simulation of <P> portfolios
 
-* `help`		Prints all available commands to the user
+* `help`
+Prints all available commands to the user
 ```
 
 
 ## Future Work
 
 * **Optimization Techniques**
-
   * *Black Litterman Allocation as optimization technique*
   * *Hierarchical Risk Parity*
-
 * **Machine Learning Techniques**
-
-  
-
 * **Macroeconomic & Microeconomic Analysis**
-
   * *Principal Component Analysis (PCA)* : Analyze and keep *N* most valuable features that caputre information about a financial instrument.
   * *Experimental Features* : exponentially-weighted covariance matrices. Etc.
-
-It is **extensive** yet easily **extensible**, and can be useful for both the casual investor and the serious practitioner. Whether you are a fundamentals-oriented investor who has identified a handful of undervalued picks, or an algorithmic trader who has a basket of interesting signals, PyPortfolioOpt can help you combine your alpha streams in a risk-efficient way.
-
-Head over to the [documentation on ReadTheDocs](https://pyportfolioopt.readthedocs.io/en/latest/) to get an in-depth look at the project, or continue below to check out some examples.
-
