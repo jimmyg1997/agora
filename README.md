@@ -55,11 +55,11 @@ Explanation:
 
 Here is an example on real life bond, stock & commodities data, demonstrating how easy it is to find the 2 efficient portfolios that:
 
-*  *maximises the Sharpe ratio* (a measure of risk-adjusted returns).
-* *minimizes the volatility*
+* *Maximises the Sharpe ratio* (a measure of risk-adjusted returns).
+* *Minimizes the volatility*
 
 ```python
-./agora.py portfolio-optimiation 5000 5 AAPL
+./agora.py portfolio-optimiation 5000 5 AAPL MSFT NVDA VRTX BTC-USD 01/01/2015 23/04/2020
 ```
 
 This outputs the following:
@@ -100,8 +100,23 @@ This outputs the following:
 <img src="https://raw.githubusercontent.com/jimmyg1997/agora/master/photos/5000_portfolio_simulation.png" alt="https://raw.githubusercontent.com/jimmyg1997/agora/master/photos/5000_portfolio_simulation.png">
 
 ## Source Code
+```
+/src/agora/agora.py        `Agora` main control used to execute commands
+/src/agora/instrument.py   Instrument class that covers methods related to instruments
+/src/agora/portfolio.py    Portfolio class that covers methods related to instruments
+/src/agora/utils.py        Every extra useful functio in terms of (a) financial calculations (b) User Experience (UI)
 
+```
 
+## ΜΕΜΟ
+* *Instrument*   : An instrument is a financial Security e.g Apple
+* *Ticker*       : It is the symbol used in the stock market. APIs used this to retrieve data. eg. AAPl for Apple
+* *Portfolio*    : A pool of different instruments that may belong to the same asset class or no
+* *Asset Class*  : An asset class is a grouping of investments that exhibit similar characteristics and are subject to the same laws eg. Stocks, Bonds, Commodities. AAPL belongs to the 'Stocks'
+* *Optimization* : For this project is the resolving of the 'Asset Allocation' problem by finding the optimal weights for every one of 2 efficient portfolios
+* *Metrics*
+ * *Descriptive*   : *Return* (price change of an instrument from day to day) & *Risk* (standard deviation of the changes)
+ * *Risk Analysis* : Implementation of CAPM (Capital Asset Pricing Model). Extra *Risk* metrics calculated against a market (Beta, Alpha, R^2). We chose **S&P500** (stock market) as market instrument.
 
 
 ## Future Work
@@ -113,3 +128,4 @@ This outputs the following:
 * **Macroeconomic & Microeconomic Analysis**
   * *Principal Component Analysis (PCA)* : Analyze and keep *N* most valuable features that caputre information about a financial instrument.
   * *Experimental Features* : exponentially-weighted covariance matrices. Etc.
+ 
