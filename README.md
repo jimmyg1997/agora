@@ -57,7 +57,7 @@ Here is an example on real life bond, stock & commodities data, demonstrating ho
 * One that *Minimizes the volatility*
 
 ```python
-./agora.py portfolio-optimiation 5000 5 AAPL MSFT NVDA VRTX BTC-USD 01/01/2015 23/04/2020
+./agora.py portfolio-optimization 5000 5 AAPL MSFT NVDA VRTX BTC-USD 01/01/2015 23/04/2020
 ```
 
 This outputs the following:
